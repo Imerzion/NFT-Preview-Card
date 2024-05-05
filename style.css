@@ -1,0 +1,156 @@
+/* FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* COLOR CODES */
+
+:root {
+--Softblue: hsl(215, 51%, 70%)
+--Cyan: hsl(178, 100%, 50%)
+--Verydarkblue (main BG): hsl(217, 54%, 11%)
+--Verydarkblue (card BG): hsl(216, 50%, 16%)
+--Verydarkblue (line): hsl(215, 32%, 27%)
+--White: hsl(0, 0%, 100%)
+}
+
+/* STYLE RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* BODY STYLES */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+}
+
+/* CONTAINER STYLING */
+
+.card_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 375px;
+}
+
+/* IMAGE STYLING */
+
+.card_upper img {
+    object-fit: contain;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.view_icon {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 83%;
+    height: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.view_icon:hover {
+    background-color: hsl(178, 100%, 50%);
+    opacity: .5;
+    cursor: pointer;
+  }    
+
+/* .view_icon {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.view_icon:hover {
+    opacity: 1;
+} */
+
+/* LOWER STYLING */
+
+.card_title  {
+    margin: 1rem 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.card_title:hover, .author span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);;
+}
+
+.card_desc {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.125rem;
+}
+
+.card_tags {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    margin-bottom: 1rem;
+}
+
+.eth, .time {
+    display: flex;
+    gap: .5rem;
+}
+
+.eth img, time img {
+    height: 1.125rem;
+    width: auto
+}
+
+.ethereum {
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+}
+
+/* BOTTOM STYLING */
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.author img {
+    max-width: 10%;
+    border: 1px solid  hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.author p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.125rem;;
+}
+
+.author span {
+    position: relative;
+    float: right;
+    left: 3px;
+    color: hsl(0, 0%, 100%);;
+}
